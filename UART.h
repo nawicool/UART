@@ -19,7 +19,7 @@ void TransmitUART0(unsigned char data){
 
 void IntializeUART0(int baud,char AsyncDoubleSPeed,char DatasizeInBits, char ParityEVENorODD, char stopBits){
 
-uint16_t UBBRValue=lrint((F_CPU /16*baud)-1);
+uint16_t UBBRValue=lrint((F_CPU /(16L*baud)-1));
 
 if(AsyncDoubleSPeed==1) { UCSR0A =(1<<U2X0);}
 
