@@ -1,4 +1,4 @@
-#include "header.h"
+#include "uart.h"
 int main(){
 	unsigned char revieved_data=0;
 	DDRC|=(1<<PINC7);
